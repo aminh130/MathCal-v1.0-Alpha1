@@ -1,0 +1,132 @@
+<!doctype html>
+<!-- In the name of Allah -->
+<!-- Developed by Mohammad Amin Hosseiny -->
+<!-- amin_hosseiny@ymail.com -->
+<!-- www.aminh.ir -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>First Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="MAH">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+    <script src="core.js"></script>
+</head>
+
+<body class="app">
+    <section id="main" data-transition="">
+        <header>
+            <nav class="left">
+                <a href="#features" data-router="aside" data-icon="menu"></a>
+            </nav>
+            <img src="logo-s.png" class="title centered">
+        </header>
+
+        <article id="main-article" class="active list indented scroll">
+            <ul>
+                <li class="dark">
+                    <strong>
+                        MathCal is an application that allows you to use some mathematical tools and it includes :
+                    </strong>
+                </li>
+                <li class="feature"><img src="img/square_root-32.png" alt="" style="margin-left:2px; margin-top:-7px;" />
+                    <strong>Quadratic equation</strong>
+                    is a tool that can be useful in solving a quadratic equation.
+                </li>
+                <li class="feature"><img src="img/printerest-32.png" alt="" style="margin-left:2px; margin-top:-7px;" />
+                    <strong>Prime diagnosis</strong>
+                    is a tool which can dignose prime numbers. 
+                </li>
+                                <li>
+                    <a href="http://aminh.ir" data-icon="user" target="_blank" class="button anchor theme" data-label="Developer's site"></a>
+                </li>
+            </ul>
+        </article>
+
+        <article id="second-article" class="list">
+        <ul>
+        <li class="dark">
+        The structure is  :  <strong>Ax^2 + Bx + C = 0</strong>
+        </li>
+        </ul><br />
+        <section id="form" data-transition="slide" class="show">
+    <article id="form-normal" class="active">
+        <div class="form">
+        <form name="amin" onSubmit="mah()">
+            <fieldset>
+                <label>Number A:</label>
+                <input type="text" name="box1" value="">
+            </fieldset>
+            <fieldset>
+                <label>Number B:</label>
+                <input type="text" name="box2" value="">
+            </fieldset>
+            <fieldset>
+                <label>Number C:</label>
+                <input type="text" name="box3" value="">
+            </fieldset>
+            
+            <input type="button" class="button anchor theme" value="Calculate !" onClick="mah()" />
+            
+            </form>
+        </div>
+            <p id="javabemoadele"></p><br/>
+            <p id="javabemoadeleh"></p>
+    </article>
+</section>
+        </article>
+                <article id="third-article" class="list">
+            <li class="highlight">
+                <strong>
+                    Coming soon on next version !
+                </strong>
+            </li>
+        </article>
+    </section>
+
+    <aside id="features">
+        <header data-title="Menu"></header>
+        <article class="active list">
+            <ul>
+                <li class="current">
+                    <a href="#main-article" data-router="article">
+                        <strong>Main Page</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#second-article" data-router="article">
+                        <strong>Quadratic Equation</strong>
+                    </a>
+                </li>
+                                <li>
+                    <a href="#third-article" data-router="article">
+                        <strong>Prime Diagnosis</strong>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </aside>
+
+    <!-- Lungo - Dependencies -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
+    <!-- Lungo - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'example'
+        });
+    </script>
+</body>
+</html>
